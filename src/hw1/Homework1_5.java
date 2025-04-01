@@ -12,7 +12,6 @@ public class Homework1_5 {
 	public static void main (String [] args) {
 		int pv = 1500000;//定義期初本金
 		double R = 0.02; //定義利率為2%
-		int yyear = 10; //定義10年
 		
 		double Sum1 = pv * (1 + R);
 		double Sum2 = Sum1 * (1 + R);
