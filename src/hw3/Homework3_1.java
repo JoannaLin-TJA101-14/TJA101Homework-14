@@ -15,7 +15,7 @@ public class Homework3_1 {
 //		System.out.println(data1 + data2 + data3); //這是測試上面程式碼是否有執行的測試
 		
 		// 檢查是否能形成三角形
-        if ((data1 + data2 > data3) && (data1 + data3 > data2) && (data2 + data3 > data1)) {
+        if ((data1 + data2 > data3) || (data1 + data3 > data2) || (data2 + data3 > data1)) {
         	System.out.println(data1);
         	System.out.println(data2);
         	System.out.println(data3);
