@@ -12,17 +12,23 @@ public class Homework4_1 {
 		int[] intArray = {29, 100, 39, 41, 50, 8, 66, 77, 95, 15};   //直接把數字宣告在裡面
 		int sum = 0;   //總和起的數字指定給一個變數
 		
+		double avg;
+		
 		for (int i =0; i < intArray.length; i++) {
-			sum += intArray[i];
+			sum += intArray[i];   //sum = sum + intArray[i]
+			}
+		avg = (double)sum / intArray.length;
+		System.out.println("平均值為: " + avg);
+		System.out.println();
+		System.out.println("大於平均值的數有這些: " );
+		
+		for (int i =0; i < intArray.length; i++) {
+			if (avg < intArray[i])
+				System.out.println(intArray[i]);
 		}
 		
-		
-		if(index >= 0 && index < sum/intArray.length) {
-			
-		}
-		
-		
-		System.out.println("平均值為: " + sum/intArray.length);
-		System.out.println("大於平均值的數有這些: " + );
 	}
+	
+	
+		
 }
