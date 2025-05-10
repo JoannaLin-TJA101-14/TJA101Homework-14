@@ -8,26 +8,24 @@ package hw4;
 public class Homework4_1 {
 
 	public static void main(String[] args) {
-//		int x[] = new int[9];   //也可以寫成下面那行
-		int[] intArray = {29, 100, 39, 41, 50, 8, 66, 77, 95, 15};   //直接把數字宣告在裡面
-		int sum = 0;   //總和起的數字指定給一個變數
+		int[] a = {29, 100, 39, 41, 50, 8, 66, 77, 95, 15}; //宣告新的一維陣列的同時，把值帶入
+		int sum= 0; // 宣告一個變數=0，陣列總和指定給他
 		
-		double avg;
+		for (int i = 0; i < a.length ; i++) {
+			sum = sum + a[i];
+			}//用迴圈來加總陣列每個元素
 		
-		for (int i =0; i < intArray.length; i++) {
-			sum += intArray[i];   //sum = sum + intArray[i]
+		int avg = sum / a.length; // 陣列總和的平均值
+		
+		System.out.println("陣列所有元素的平均值為"+ "" + avg);
+		
+		System.out.println("大於平均值的元素有：");
+		for (int i = 0; i < a.length ; i++) {
+			if (a[i] > avg) {
+				System.out.print(a[i]+" ");
+				}
 			}
-		avg = (double)sum / intArray.length;
-		System.out.println("平均值為: " + avg);
-		System.out.println();
-		System.out.println("大於平均值的數有這些: " );
-		
-		for (int i =0; i < intArray.length; i++) {
-			if (avg < intArray[i])
-				System.out.println(intArray[i]);
 		}
-		
-	}
 	
 	
 		
